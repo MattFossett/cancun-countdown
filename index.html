@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+
+    
+</head>
+<body>
+    <h1>Countdown to Cancun Time</h1>
+    <p>Countdown to Cancun:</p><p id="countdown"></p>
+    <img src="https://images.r.cruisecritic.com/features/2016/06/tropic-hero.jpg">
+    <script>
+        
+        var today = new Date();
+        
+
+        var cancunDate = new Date(2022, 5, 12)
+        var daysDelta = cancunDate.getTime() - today.getTime()
+        var Difference_In_Days = Math.floor( daysDelta / (1000 * 3600 * 24));
+
+        
+        document.getElementById('countdown').textContent = Difference_In_Days + " Days!"
+    </script>
+</body>
